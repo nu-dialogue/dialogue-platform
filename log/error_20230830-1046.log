@@ -1,0 +1,19 @@
+nohup: ignoring input
+127.0.0.1 - - [30/Aug/2023 10:46:34] "GET /dialogue?id=1 HTTP/1.0" 200 -
+127.0.0.1 - - [30/Aug/2023 10:46:34] "GET /favicon.ico HTTP/1.0" 202 -
+/home/ubuntu/miniconda3/envs/platform_env/lib/python3.8/site-packages/langchain/llms/openai.py:173: UserWarning: You are trying to use a chat model. This way of initializing it is no longer supported. Instead, please use: `from langchain.chat_models import ChatOpenAI`
+  warnings.warn(
+/home/ubuntu/miniconda3/envs/platform_env/lib/python3.8/site-packages/langchain/llms/openai.py:753: UserWarning: You are trying to use a chat model. This way of initializing it is no longer supported. Instead, please use: `from langchain.chat_models import ChatOpenAI`
+  warnings.warn(
+127.0.0.1 - - [30/Aug/2023 10:46:38] "POST /interact HTTP/1.0" 200 -
+127.0.0.1 - - [30/Aug/2023 10:47:03] "POST /interact HTTP/1.0" 200 -
+Traceback (most recent call last):
+  File "server.py", line 105, in <module>
+    server()
+  File "server.py", line 101, in server
+    server.serve_forever()
+  File "/home/ubuntu/miniconda3/envs/platform_env/lib/python3.8/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/home/ubuntu/miniconda3/envs/platform_env/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

@@ -1,7 +1,0 @@
-nohup: ignoring input
-Traceback (most recent call last):
-  File "server.py", line 143, in <module>
-    logger = set_logger("dialog", "log/dialog.log")
-  File "server.py", line 37, in set_logger
-    logger = getLogger(name)
-NameError: name 'getLogger' is not defined

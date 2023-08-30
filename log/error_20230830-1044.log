@@ -1,7 +1,0 @@
-nohup: ignoring input
-Traceback (most recent call last):
-  File "server.py", line 102, in <module>
-    server()
-  File "server.py", line 14, in server
-    class MyHTTPRequestHandler(BaseHTTPRequestHandler):
-NameError: name 'BaseHTTPRequestHandler' is not defined

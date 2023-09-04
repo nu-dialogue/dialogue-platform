@@ -21,7 +21,7 @@ Python == 3.8
 - `log/`: Directory for log output
 - `server.py`: Script that manage Web server
 - `gpt_bot.py`: Script that generates speech using GPT-3.5/4
-- `interface.py`: HTML of dialogue Interface
+- `interface.py`: Script that defines HTML of dialogue Interface
 - `start.sh`: Shell script for execution
 
 ## Launch the dialogue platform

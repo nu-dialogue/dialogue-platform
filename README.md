@@ -1,44 +1,34 @@
-# テキスト対話プラットフォーム
-## 動作環境
-Python 3.8.17
-
-## 前提条件
-- Amazon EC2インスタンスでnginxによるWebサーバ起動ができている
-- /dialogueへのGETが許可されている
-
-## 導入方法
-- リポジトリをクローン
-
+# Text-based Dialogue Platform
+This repository provides a text-based dialogue platform that operates on the Web.
+## Setup
+Python == 3.8
+1. Build web server using software like nginx.
+2. Clone repository
   ```
   git clone https://github.com/nu-dialogue/dialogue-platform.git
   ```
-  
-- ライブラリをインストール
-  - GPT-3.5/4を使用することを想定しています
-  - 他のモデルを使用する場合はそのモデルに応じたライブラリをインストールする必要があります
-
+3. Install libraries
+  - These are the libraries required to use GPT-3.5/4. If you use another model, you need to install the library corresponding to that model.
   ```
   pip install -r requirements.txt
   ```
-
-- APIキーの設定
-  - 環境変数`OPENAI_API_KEY`にOpenAIのAPIキーを設定
-
+4. Set API key
+  - Set your OpenAI API key to the environment variable `OPENAI_API_KEY`.
   ```
-  export OPENAI_API_KEY="<自身のAPIキー>"
+  export OPENAI_API_KEY="<Your API key>"
   ```
+## Files
+- `log/`: Directory for log output
+- `server.py`: Script that manage Web server
+- `gpt_bot.py`: Script that generates speech using GPT-3.5/4
+- `interface.py`: HTML of dialogue Interface
+- `start.sh`: Shell script for execution
 
-## ファイル構成
-- `log/`: ログ出力用ディレクトリ
-- `server.py`: Webサーバ管理用スクリプト
-- `gpt_bot.py`: GPT-3.5/4による発話生成を行うスクリプト
-- `interface.py`: 対話インタフェースのHTMLが記述されたスクリプト
-- `start.sh`: 実行用シェルスクリプト
-
-## 実行例
-- 対話プラットフォームの起動
-
+## Launch the dialogue platform
 ```
 bash start.sh
 ```
+
+## License
+Text-based Dialogue Platform is Apache 2.0 licensed. See the LICENSE file for details.
 

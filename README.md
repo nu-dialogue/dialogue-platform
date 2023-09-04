@@ -30,5 +30,5 @@ bash start.sh
 ```
 
 ## License
-Text-based Dialogue Platform is Apache 2.0 licensed. See the LICENSE file for details.
+[LICENSE](/LICENSE)
 
